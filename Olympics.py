@@ -13,8 +13,8 @@ df.drop_duplicates(inplace=True)
 
 print(df.corr(numeric_only=True))
 
-#sns.heatmap(df.corr(numeric_only=True))
-#plt.show()
+sns.heatmap(df.corr(numeric_only=True))
+plt.show()
 
 #Participants each year
 df_grp_team=df.groupby('Year')['ID'].count()
